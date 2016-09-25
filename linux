@@ -5,8 +5,5 @@ commit 1
 commit 2
 
 commit 4
-<<<<<<< HEAD
-commit 6
-=======
 commit 5
->>>>>>> 738951dcf4afa4d9b66387b08c34048458a26509
+commit bravo
