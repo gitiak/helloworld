@@ -1,0 +1,15 @@
+#https://www.sslshopper.com/article-how-to-create-and-install-an-apache-self-signed-certificate.html
+
+SSLEngine on
+SSLCertificateFile /etc/ssl/crt/mysitename.crt
+SSLCertificateKeyFile /etc/ssl/crt/mysitename.key
+
+
+openssl req -x509 -nodes -days 365 -newky rsa:2048 -keyout thesecret.key -out thesecret.crt
+
+note: The common name should be the fully qualified domain name for the site you are securing (www.mydomain.com).
+
+cp ssl.conf ssl.conf.origz
+cp thesecret.crt /etc/pki/tls/certs
+cp thesecret.key /etc/pki/tls/private/
+
