@@ -13,3 +13,5 @@ cp ssl.conf ssl.conf.origz
 cp thesecret.crt /etc/pki/tls/certs
 cp thesecret.key /etc/pki/tls/private/
 
+semanage port -l |grep http
+semanage port -a -t http_port_t -p tcp 8001
