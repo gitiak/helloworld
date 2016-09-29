@@ -15,3 +15,6 @@ cp thesecret.key /etc/pki/tls/private/
 
 semanage port -l |grep http
 semanage port -a -t http_port_t -p tcp 8001
+
+yum cheat sheet
+http://www.arduino.org/learning/getting-started/download/21_924abaed4958b5b40713907d1099b82c
