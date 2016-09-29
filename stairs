@@ -1,0 +1,30 @@
+#!/bin/bash
+
+echo "Please enter a number between 1 and 100"
+tst='[1-9]+[1-9]+$'
+read steps
+
+#if [ $steps -lt 1 ] || [ $steps -gt 100 ]; then
+#echo "number is out of bounds"
+#exit
+#fi
+
+until [[ $steps =~ $tst ]] && [ $steps -ge 1 ] && [ $steps -le 100 ]
+do
+echo "not a number try again"
+read steps
+done
+
+#echo $steps
+#for i in `seq 1 $steps`
+#do
+#echo $i
+#done
+
+x=$steps
+until [ $x == 0 ];
+do
+#printf "%${x}s\n" "#"
+printf "%0*s\n" $x "#"
+x=$(($x-1)) 
+done

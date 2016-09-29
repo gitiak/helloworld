@@ -1,0 +1,13 @@
+#!/bin/bash
+
+seed='^[1-9]+$'
+
+echo "enter number"
+read input
+
+if ! [[ $input =~ $seed ]]; then
+echo "not a number"
+exit
+else
+echo "you entered a number"
+fi
