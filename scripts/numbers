@@ -1,0 +1,17 @@
+#!/bin/bash
+echo "Enter value for X"
+x=-101
+ until [ $x -ge -100 ]
+ do 
+ read x
+ done
+echo "Enter value for y"
+y=101
+ until [ $y -le 100 ] && [ $y != 0 ]
+ do 
+ read y
+ done
+echo $(($x+$y))
+echo $(($x-$y))
+echo $(($x*$y))
+echo $(($x/$y))

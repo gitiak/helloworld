@@ -1,0 +1,27 @@
+#!/bin/bash
+
+x=0
+until [ $x -ge 1 ] && [ $x -le 1000 ]
+do
+read x
+done
+
+y=0
+until [ $y -ge 1 ] && [ $y -le 1000 ]
+do
+read y
+done
+
+z=0
+until [ $z -ge 1 ] && [ $z -le 1000 ]
+do
+read z
+done
+
+if ([ $x -gt $y ] && [ $x -gt $z  ]) || ([ $x -lt $y ] && [ $x -lt $z  ]) && [ $y != $z ]; then
+echo "SCALENE"
+ elif [ $x = $y ] || [ $y = $z ] && [ $x != $z ]; then
+ echo "ISOSCELES"
+  elif [ $x = $y ] && [ $y = $z ] && [ $x = $z ]; then
+   echo "EQUILATERAL"
+fi
