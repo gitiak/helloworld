@@ -1,0 +1,4 @@
+#!/bin/bash
+read expression
+printf "%.3f" $(echo "scale =5; ${expression}" |bc)
+#note the printf statement here rounds the result up as expected as bc does not round"
