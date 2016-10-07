@@ -1,0 +1,4 @@
+#!/bin/bash
+ray=(`cat logfile`)
+
+echo ${ray[3]}

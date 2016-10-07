@@ -1,0 +1,11 @@
+#!/bin/bash
+while read line
+do
+    my_array=("${my_array[@]}" $line)
+done
+
+#declare -a new_array1=( ${my_array[@]/a/} )
+declare -a new_array1=( ${my_array[@]/A*/} )
+declare -a new_array2=( ${my_array[@]/*a*/} )
+echo ${new_array2[@]}
+

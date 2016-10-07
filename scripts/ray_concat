@@ -1,0 +1,4 @@
+#!/bin/bash
+ray=`cat`
+ray1=( ${ray[@]} ${ray[@]} ${ray[@]} )
+echo ${ray1[@]}

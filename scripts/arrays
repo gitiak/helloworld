@@ -1,0 +1,8 @@
+#!/bin/bash
+while read line
+do
+    ray=("${ray[@]}" $line)
+done
+
+#echo ${ray[@]}
+echo ${ray[@]3:7}
