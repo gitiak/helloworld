@@ -1,0 +1,16 @@
+#!/bin/bash
+
+x=0
+until [ $x -ge 1 ] && [ $x -le 100 ]
+do
+read x
+done
+
+declare -a ray
+until [ ${#ray[@]} = $x ]
+do
+read input
+  ray=(${ray[@]} $input)
+done
+  ray=${ray[@]}
+echo $((${ray// /^}))
