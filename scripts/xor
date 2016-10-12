@@ -3,7 +3,7 @@
 # bitwise exclusive OR ( XOR ) example
 echo XOR Truth table:
 
-echo 0XOR0=$(( 1 ^ 2 ^ 2 ^ 2 ^ 1 ))
+echo 0XOR0=$(( 1 ^ 7 ^ 7 ^ 7 ^ 1 ))
 echo 0XOR1=$(( 0 ^ 1 ^ 0 ))
 echo 1XOR0=$(( 1 ^ 0 ))
 echo 1XOR1=$(( a ^ b ))

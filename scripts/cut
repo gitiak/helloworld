@@ -1,0 +1,12 @@
+#!/bin/sh
+#ray=`cat`
+#ray1=(${ray[@]})
+#for i in "${ray1[@]}"
+#do
+#echo $i |cut -c3
+#done
+
+while read input
+do
+echo $input |cut -c3
+done
