@@ -1,0 +1,27 @@
+162  git status
+  163  git branch -a
+  164  git checkout -b newfeature
+  165  git branch -a
+  166  ls
+  167  vi merge_demo
+  168  git commit -am "new feature comment"
+  169  git status
+  171  git push origin newfeature
+  172  git branch -a
+  173  git checkout master
+  174  ls
+  175  cat merge_demo
+  176  git checkout newfeature
+  177  cat merge_demo
+  178  git branch -a
+  179  git branch
+  180  git checkout master
+  181  git branch
+  182  cat merge_demo
+  183  git merge newfeature
+  184  cat merge_demo
+  185  git branch -d newfeature
+  186  git branch
+  187  git branch -a
+  190  git push origin :newfeature
+
