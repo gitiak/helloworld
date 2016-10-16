@@ -1,6 +1,4 @@
 git config --global user.name gitiak
 git config --global user.email gitiak@localhost.localdomain
-eval SSH_AUTH_SOCK=/tmp/ssh-DkSxB5ApcEEX/agent.12546; export SSH_AUTH_SOCK;
-SSH_AGENT_PID=12547; export SSH_AGENT_PID;
-echo Agent pid 12547;
+eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
