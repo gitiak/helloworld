@@ -1,11 +1,14 @@
 #!/bin/bash
-grds=`cat`
-awk '{
+while read input
+do
+echo $input| awk '{
 total=$3+$4+$5;
 avg=total/3;
-if ( avg >= 80 ) grade="A";
-else if ( avg >= 60) grade ="B";
-else if (avg >= 50) grade ="C";
+if ( avg >= 81 ) grade="A";
+if ( avg <= 80 && avg >= 60 ) grade="B";
+if ( avg <= 59  && avg >=50 ) grade="C";
 else grade="FAIL";
 print $0,"=>",grade;
 }'
+done
+# not sure why this shit is not working.

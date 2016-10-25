@@ -1,0 +1,13 @@
+if ( ! getopts "abc:deh" opt); then
+	echo "Usage: `basename $0` options (-ab) (-c value) (-d) (-e) -h for help";
+	exit $E_OPTERROR;
+fi
+
+while getopts "abc:deh" opt; do
+     case $opt in
+         a) echo "do something";;
+         b) echo "do another";;
+         c) var=$OPTARG;;
+	 h) echo "Usage: `basename $0` options (-ab) (-c value) (-d) (-e) -h for help";;
+     esac
+done
